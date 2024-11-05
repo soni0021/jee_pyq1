@@ -1,0 +1,22 @@
+/* src/components/Login.css */
+
+.login-paper {
+    padding: 2rem;
+    margin-top: 5rem;
+  }
+  
+  .login-paper .MuiAvatar-root {
+    background-color: #4f46e5; /* Matches primary.main color */
+  }
+  
+  .login-paper .MuiTypography-root {
+    margin-bottom: 1rem;
+  }
+  
+  .login-paper .MuiButton-root {
+    background-color: #4f46e5;
+  }
+  
+  .login-paper .MuiButton-root:hover {
+    background-color: #3730a3;
+  }

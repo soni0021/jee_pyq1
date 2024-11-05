@@ -1,0 +1,27 @@
+[
+    {
+        "chapter": "Mechanics",
+        "questions": [
+            {
+                "question": "What is the acceleration due to gravity?",
+                "options": ["9.8 m/s²", "10 m/s²", "9.81 m/s²", "9.7 m/s²"],
+                "correct_answer": "9.8 m/s²"
+            },
+            {
+                "question": "Newton's second law is?",
+                "options": ["F = ma", "F = mg", "F = mv", "F = mgh"],
+                "correct_answer": "F = ma"
+            }
+        ]
+    },
+    {
+        "chapter": "Electromagnetism",
+        "questions": [
+            {
+                "question": "What is the unit of electric current?",
+                "options": ["Volt", "Ohm", "Ampere", "Watt"],
+                "correct_answer": "Ampere"
+            }
+        ]
+    }
+]

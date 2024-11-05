@@ -1,0 +1,47 @@
+[
+    {
+      "chapter": "Calculus",
+      "questions": [
+        {
+          "question": "What is the derivative of sin(x)?",
+          "options": ["cos(x)", "-cos(x)", "sin(x)", "-sin(x)"],
+          "correct_answer": "cos(x)"
+        },
+        {
+          "question": "The integral of 1/x dx is:",
+          "options": ["ln|x| + C", "x + C", "1/(x²) + C", "e^x + C"],
+          "correct_answer": "ln|x| + C"
+        }
+      ]
+    },
+    {
+      "chapter": "Algebra",
+      "questions": [
+        {
+          "question": "What is the solution to the equation x² - 4 = 0?",
+          "options": ["x = 2", "x = -2", "x = ±2", "x = 0"],
+          "correct_answer": "x = ±2"
+        },
+        {
+          "question": "The value of (a+b)² is:",
+          "options": ["a² + 2ab + b²", "a² - 2ab + b²", "a² + b²", "a² - b²"],
+          "correct_answer": "a² + 2ab + b²"
+        }
+      ]
+    },
+    {
+      "chapter": "Trigonometry",
+      "questions": [
+        {
+          "question": "What is sin(90°)?",
+          "options": ["0", "1", "√2/2", "-1"],
+          "correct_answer": "1"
+        },
+        {
+          "question": "The identity tan(x) = sin(x)/cos(x) is:",
+          "options": ["Pythagorean identity", "Trigonometric identity", "Algebraic identity", "Exponential identity"],
+          "correct_answer": "Trigonometric identity"
+        }
+      ]
+    }
+  ]

@@ -1,0 +1,24 @@
+/* src/App.css */
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #0F172A;
+  color: white;
+}
+
+.main-content {
+  flex: 1;
+  padding-top: 64px; /* Height of the Navbar */
+  padding-bottom: 32px;
+}
+
+.MuiButton-root {
+  border-radius: 8px !important;
+}
+
+@media (max-width: 600px) {
+  .main-content {
+    padding-top: 56px; /* Adjust for smaller screens */
+  }
+}

@@ -1,0 +1,55 @@
+/* src/components/Profile.css */
+.profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 2rem;
+    background-color: #0F172A;
+    min-height: 100vh;
+  }
+  
+  .profile-card {
+    width: 100%;
+    max-width: 500px;
+    padding: 2rem;
+    border-radius: 16px;
+    background-color: #1E293B;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .profile-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
+  }
+  
+  .profile-card .MuiAvatar-root {
+    border: 4px solid #fff;
+  }
+  
+  .profile-card .MuiTypography-h5 {
+    color: #FFFFFF;
+    margin-top: 1rem;
+  }
+  
+  .profile-card .MuiTextField-root {
+    background-color: #334155;
+    border-radius: 8px;
+    color: #FFFFFF;
+  }
+  
+  .profile-card .MuiButton-contained {
+    background-color: #4F46E5;
+    color: #FFFFFF;
+    &:hover {
+      background-color: #3730A3;
+    }
+  }
+  
+  .profile-card .MuiButton-outlined {
+    border-color: #4F46E5;
+    color: #4F46E5;
+    &:hover {
+      background-color: rgba(79, 70, 229, 0.1);
+    }
+  }

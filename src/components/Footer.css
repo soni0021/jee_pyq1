@@ -1,0 +1,22 @@
+/* Footer.css */
+
+.footer {
+  background-color: #212121; /* Dark shade for the footer */
+  color: #ffffff; /* White text for contrast */
+  padding: 60px 0; /* Increased vertical padding */
+}
+
+.footer a {
+  color: #ffffff; /* White links to match text color */
+  text-decoration: none; /* Removes underline from links */
+}
+
+.footer a:hover {
+  text-decoration: underline; /* Underline on hover for accessibility */
+}
+
+@media (max-width: 600px) {
+  .footer {
+    text-align: center; /* Centers text on small screens */
+  }
+}

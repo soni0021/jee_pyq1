@@ -1,0 +1,25 @@
+{
+  "name": "jee-mains-pyq",
+  "version": "1.0.0",
+  "description": "JEE Mains Previous Year Questions Website Backend",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "vite",
+    "start:backend": "node server.js",
+    "dev:backend": "nodemon server.js",
+    "test:connection": "node testConnection.js",
+    "start:backend-server": "node server.js",
+    "dev:all": "concurrently \"npm run start:backend-index\" \"npm run start:backend-server\" \"npm run dev\"",
+    "seed": "node seed/seed.js"
+  },
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "mongoose": "^6.0.12"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.0"
+  }
+}

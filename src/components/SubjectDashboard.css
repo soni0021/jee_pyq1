@@ -1,0 +1,25 @@
+/* src/components/SubjectDashboard.css */
+.dashboard-container {
+    padding: 4rem 2rem;
+    background-color: #0F172A;
+    min-height: 100vh;
+  }
+  
+  .chapter-card {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1) !important;
+    border-radius: 16px !important;
+    overflow: hidden;
+    background-color: #1E293B;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .chapter-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .loading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }

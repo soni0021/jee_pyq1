@@ -1,0 +1,22 @@
+/* src/components/Signup.css */
+
+.signup-paper {
+    padding: 2rem;
+    margin-top: 5rem;
+  }
+  
+  .signup-paper .MuiAvatar-root {
+    background-color: #f50057; /* Matches secondary.main color */
+  }
+  
+  .signup-paper .MuiTypography-root {
+    margin-bottom: 1rem;
+  }
+  
+  .signup-paper .MuiButton-root {
+    background-color: #f50057;
+  }
+  
+  .signup-paper .MuiButton-root:hover {
+    background-color: #c51162;
+  }

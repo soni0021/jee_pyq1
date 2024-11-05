@@ -1,0 +1,21 @@
+/* src/components/Navbar.css */
+.navbar {
+    background: linear-gradient(135deg, #4F46E5, #3730A3) !important;
+  }
+  
+  .navbar-container {
+    padding: 0.5rem 2rem !important;
+  }
+  
+  .MuiButton-root {
+    text-transform: none !important;
+    border-radius: 24px !important;
+    padding: 6px 16px !important;
+    background-color: rgba(255, 255, 255, 0.1) !important;
+  }
+  
+  @media (max-width: 600px) {
+    .navbar-container {
+      padding: 0.5rem 1rem !important;
+    }
+  }
