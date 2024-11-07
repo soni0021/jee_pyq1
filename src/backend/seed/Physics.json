@@ -1,26 +1,666 @@
 [
     {
-        "chapter": "Mechanics",
+        "chapter": "gravitation",
         "questions": [
             {
-                "question": "What is the acceleration due to gravity?",
-                "options": ["9.8 m/s²", "10 m/s²", "9.81 m/s²", "9.7 m/s²"],
-                "correct_answer": "9.8 m/s²"
+                "question": "A satellite is revolving around a planet of mass M in a circular orbit of radius R with a period of revolution T. If the force of attraction between planet and star is proportional to R⁻⁵/₂, then choose the correct option :",
+                "options": [
+                    "T² ∝ R⁷/₂",
+                    "T² ∝ R⁵/₂",
+                    "T² ∝ R³/₂",
+                    "T² ∝ R"
+                ],
+                "correct_answer": "T² ∝ R⁷/₂"
             },
             {
-                "question": "Newton's second law is?",
-                "options": ["F = ma", "F = mg", "F = mv", "F = mgh"],
-                "correct_answer": "F = ma"
+                "question": "The acceleration due to gravity on the surface of earth is g. If the diameter of earth reduces to half of its original value and mass remains constant, then acceleration due to gravity on the surface of earth would be :",
+                "options": [
+                    "g/4",
+                    "2g",
+                    "g/2",
+                    "4g"
+                ],
+                "correct_answer": "4g"
+            },
+            {
+                "question": "Given below are two statements : one is labelled as Assertion (A) and the other is labelled as Reason (R). \nAssertion (A): The angular speed of the moon in its orbit about the earth is more than the angular speed of the earth in its orbit about the sun. \nReason (R): The moon takes less time to move around the earth than the time taken by the earth to move around the sun.\nIn the light of the above statements, choose the most appropriate answer from the options given below :",
+                "options": [
+                    "(A) is correct but (R) is not correct",
+                    "Both (A) and (R) are correct and (R) is the correct explanation of (A)",
+                    "Both (A) and (R) are correct but (R) is not the correct explanation of (A)",
+                    "(A) is not correct but (R) is correct"
+                ],
+                "correct_answer": "Both (A) and (R) are correct but (R) is the correct explanation of (A)"
+            },
+            {
+                "question": "At what distance above and below the surface of the earth a body will have same weight, (take radius of earth as R)",
+                "options": [
+                    "R/√5R − R",
+                    "√5R − R",
+                    "2R/√5R − R",
+                    "√5R−R/2"
+                ],
+                "correct_answer": "√5R − R"
+            },
+            {
+                "question": "A planet takes 200 days to complete one revolution around the Sun. If the distance of the planet from Sun is reduced to one fourth of the original distance, how many days will it take to complete one revolution?",
+                "options": [
+                    "25",
+                    "50",
+                    "100",
+                    "20"
+                ],
+                "correct_answer": "25"
+            },
+            {
+                "question": "The gravitational potential at a point above the surface of earth is -5.12 × 10⁷ J/kg and the acceleration due to gravity at that point is 6.4 m/s². Assume that the mean radius of earth to be 6400 km. The height of this point above the earth's surface is :",
+                "options": [
+                    "1600 km",
+                    "540 km",
+                    "1200 km",
+                    "1000 km"
+                ],
+                "correct_answer": "1600 km"
+            },
+            {
+                "question": "Escape velocity of a body from earth is 11.2 km/s. If the radius of a planet be one-third the radius of earth and mass be one-sixth that of earth, the escape velocity from the planet is:",
+                "options": [
+                    "11.2 km/s",
+                    "8.4 km/s",
+                    "4.2 km/s",
+                    "7.9 km/s"
+                ],
+                "correct_answer": "7.9 km/s"
+            },
+            {
+                "question": "Four identical particles of mass m are kept at the four corners of a square. If the gravitational force exerted on one of the masses by the other masses is (√2+1) Gm²/L², the length of the sides of the square is",
+                "options": [
+                    "L/2",
+                    "2L",
+                    "3L",
+                    "4L"
+                  ],
+                  "correct_answer": "L"
+            },
+            {
+                "question": "The mass of the moon is 1/144 times the mass of a planet and its diameter 1/16 times the diameter of a planet. If the escape velocity on the planet is v, the escape velocity on the moon will be:",
+                "options": [
+                    "v/3",
+                    "v/4",
+                    "v/12",
+                    "v/6"
+                ],
+                "correct_answer": "v/3"
+            }
+
+        ]
+    },
+    {
+        "chapter": "motion in one dimension",
+        "questions": [
+            {
+                "question": "A particle is moving in one dimension (along x axis) under the action of a variable force. It's initial position was right of origin. The variation of its position (x) with time (t) is given as x = −3t³ + 18t² + 16t, where x is in m and t is in s. The velocity of the particle when its acceleration becomes zero is_____ m/s.",
+                "options": [
+                    "2",
+                    "5",
+                    "3",
+                    "32"
+                ],
+                "correct_answer": "52"
+            },
+            {
+                "question": "Train A is moving along two parallel rail tracks towards north with speed 72 km/h and train B is moving towards south with speed 108 km/h. Velocity of train B with respect to A and velocity of ground with respect to B are (in ms⁻¹):",
+                "options": [
+                    "-30 and 50",
+                    "-50 and -30",
+                    "-50 and 30",
+                    "50 and -30"
+                ],
+                "correct_answer": "-50 and 30"
+            },
+            {
+                "question": "A particle initially at rest starts moving from reference point x = 0 along x-axis, with velocity that varies as v = 4√xm/s. The acceleration of the particle is _____ ms⁻².",
+                "options": [
+                    "4",
+                    "8",
+                    "10",
+                    "6"
+                ],
+                "correct_answer": "8"
+            },
+            {
+                "question": "A particle starts from origin at t = 0 with a velocity 5î m/s and moves in x - y plane under action of a force which produces a constant acceleration of (3î + 2ĵ)m/s². If the x-coordinate of the particle at that instant is 84 m, then the speed of the particle at this time is √α m/s. The value of α is ______",
+                "options": [
+                    "2",
+                    "5",
+                    "3",
+                    "32"
+                ],
+                "correct_answer": "673"
+            },
+            {
+                "question": "A bullet is fired into a fixed target looses one third of its velocity after travelling 4 cm. It penetrates further D × 10⁻³ m before coming to rest. The value of D is :",
+                "options": [
+                    "1",
+                    "2",
+                    "3",
+                    "4"
+                ],
+                "correct_answer": "3.2"
+            },
+            {
+                "question": "The displacement and the increase in the velocity of a moving particle in the time interval of t to (t + 1)s are 125 m and 50 m/s, respectively. The distance travelled by the particle in (t + 2)s is ______ m.",
+                "options": [
+                    "175",
+                    "225",
+                    "300",
+                    "400"
+                ],
+                "correct_answer": "175"
+            },
+             {
+                "question": "The relation between time 't' and distance 'x' is x = αt² + βx, where α and β are constants. The relation between acceleration (a) and velocity (v) is:",
+                "options": [
+                  "a = -2αv³",
+                  "a = -5αv⁵",
+                  "a = -3αv²",
+                  "a = -4αv⁴"
+                ],
+                "correct_answer": "a = -2αv³"
+              }
+        ]
+    },
+    {
+        "chapter": "motion in two dimensions",
+        "questions": [
+            {
+                "question": "A particle moving in a circle of radius R with uniform speed takes time T to complete one revolution. If this particle is projected with the same speed at an angle θ to the horizontal, the maximum height attained by it is equal to 4R. The angle of projection θ is then given by :",
+                "options": [
+                    "sin⁻¹ [2gT²/π²R]",
+                    "sin⁻¹ [π²R/2gT²]",
+                    "cos⁻¹ [2gT²/π²R]",
+                    "cos⁻¹ [π²R/2gT²]"
+                ],
+                "correct_answer": "sin⁻¹ [2gT²/π²R]"
+            },
+            {
+                "question": "If the radius of curvature of the path of two particles of same mass are in the ratio 3:4, then in order to have constant centripetal force, their velocities will be in the ratio of:",
+                "options": [
+                    "√3:2",
+                    "1:√3",
+                    "√3:1",
+                    "2:√3"
+                ],
+                "correct_answer": "√3:2"
+            },
+            {
+                "question": "A ball rolls off the top of a stairway with horizontal velocity u. The steps are 0.1 m high and 0.1 m wide. The minimum velocity u with which that ball just hits the step 5 of the stairway will be √xms⁻¹ where x=______ [use g = 10 m/s² ].",
+                "options": [
+                    "1",
+                    "2",
+                    "3",
+                    "4"
+                ],
+                "correct_answer": "2"
+            },
+            {
+                "question": "A particle of mass m projected with a velocity'u' making an angle of 30° with the horizontal. The magnitude of angular momentum of the projectile about the point of projection when the particle is at its maximum height is ______",
+                "options": [
+                    "mu³/16g",
+                    "√3mu³/2g",
+                    "√3mu³/16g",
+                    "mu³/√2g"
+
+                ],
+                "correct_answer": "√3mu³/16g"
             }
         ]
     },
     {
-        "chapter": "Electromagnetism",
+        "chapter": "laws of motion",
         "questions": [
             {
-                "question": "What is the unit of electric current?",
-                "options": ["Volt", "Ohm", "Ampere", "Watt"],
-                "correct_answer": "Ampere"
+                "question": "Consider a block and trolley system as shown in figure. If the coefficient of kinetic friction between the trolley and the surface is 0.04, the acceleration of the system in ms⁻² is : (Consider that the string is massless and unstretchable and the pulley is also massless and frictionless)",
+                "options": [
+                    "3",
+                    "4",
+                    "2",
+                    "1.2"
+                ],
+                "correct_answer": "2"
+            },
+            {
+                "question": "A cricket player catches a ball of mass 120 g moving with 25 m/s speed. If the catching process is completed in 0.1 s then the magnitude of force exerted by the ball on the hand of player will be (in SI unit):",
+                "options": [
+                    "24",
+                    "12",
+                    "25",
+                    "30"
+                ],
+                "correct_answer": "30"
+            },
+            {
+                "question": "A body of mass 4 kg experiences two forces F₁ = 5î + 8ĵ + 7k̂ and F₂ = 3î − 4ĵ − 3k̂. The acceleration acting on the body is :",
+                "options": [
+                    "−2î − ĵ − k̂",
+                    "4î + 2ĵ + 2k̂",
+                    "2î + ĵ + k̂",
+                    "2î + 3ĵ + 3k̂"
+                ],
+                "correct_answer": "2î + ĵ + k̂"
+            },
+            {
+                "question": "A train is moving with a speed of 12 m/s on rails which are 1.5 m apart. To negotiate a curve radius 400 m, the height by which the outer rail should be raised with respect to the inner rail is (Given, g = 10 m/s²):",
+                "options": [
+                    "6.0 cm",
+                    "5.4 cm",
+                    "4.8 cm",
+                    "4.2 cm"
+                ],
+                "correct_answer": "5.4 cm"
+            },
+            {
+                "question": "A body of mass 1000 kg is moving horizontally with a velocity 6 m/s. If 200 kg extra mass is added, the final velocity (in m/s) is:",
+                "options": [
+                    "6",
+                    "2",
+                    "3",
+                    "5"
+                ],
+                "correct_answer": "5"
+            },
+            {
+                "question": "Given below are two statements:\nStatement (I) : The limiting force of static friction depends on the area of contact and independent of materials. \nStatement (II) : The limiting force of kinetic friction is independent of the area of contact and depends on materials. \nIn the light of the above statements, choose the most appropriate answer from the options given below:",
+                "options": [
+                    "Statement I is correct but Statement II is incorrect",
+                    "Statement I is incorrect but Statement II is correct",
+                    "Both Statement I and Statement II are incorrect",
+                    "Both Statement I and Statement II are correct"
+                ],
+                "correct_answer": "Statement I is incorrect but Statement II is correct"
+            },
+            {
+                "question": "A heavy iron bar of weight 12 kg is having its one end on the ground and the other on the shoulder of a man. The rod makes an angle 60° with the horizontal, the weight experienced by the man is :",
+                "options": [
+                    "6 kg",
+                    "12 kg",
+                    "3 kg",
+                    "6√3 kg"
+                ],
+                "correct_answer": "3 kg"
+            },
+            {
+                "question": "A stone of mass 900 g is tied to a string and moved in a vertical circle of radius 1 m making 10rpm. The tension in the string, when the stone is at the lowest point is (if π² = 9.8 and g = 9.8 m/s²):",
+                "options": [
+                    "97 N",
+                    "9.8 N",
+                    "8.82 N",
+                    "17.8 N"
+                ],
+                "correct_answer": "9.8 N"
+            },
+            {
+                "question": "All surfaces shown in figure are assumed to be frictionless and the pulleys and the string are light. The acceleration of the block of mass 2 kg is:",
+                "options": [
+                  "g/2",
+                  "5g/3",
+                  "g/3",
+                  "g/4"
+                ],
+                "correct_answer": "g/3"
+              },
+              {
+                "question": "A block of mass 1 kg is pushed up a surface inclined to horizontal at an angle of 60° by a force of 10 N parallel to the inclined surface as shown in figure. When the block is pushed up by 10 m along inclined surface, the work done against frictional force is : [g = 10 m/s²]",
+                "options": [
+                    "5√3 J",
+                    "5J",
+                    "5 × 10³ J",
+                    "10 J"
+                ],
+                "correct_answer": "5 J"
+              },
+              {
+                "question": "A block of mass m is placed on a surface having vertical cross section given by y = x²/4. If coefficient of friction is 0.5, the maximum height above the ground at which block can be placed without slipping is:",
+                "options": [
+                    "1/4 m",
+                    "1/2 m",
+                    "1/6 m",
+                    "1/3 m"
+                ],
+                "correct_answer": "1/4 m"
+              },
+              {
+                "question": "Three blocks A, B and C are pulled on a horizontal smooth surface by a force of 80 N as shown in figure. The tensions T₁ and T₂ in string are respectively:",
+                "options": [
+                    "40 N, 64 N",
+                    "60 N, 80 N",
+                    "88 N, 96 N",
+                    "80 N, 100 N"
+                ],
+                "correct_answer": "40 N, 64 N"
+              },
+              {
+                "question": "In the given arrangement of a doubly inclined plane two blocks of masses M and m are placed. The blocks are connected by a light string passing over an ideal pulley as shown. The coefficient of friction between the surface of the plane and the blocks is 0.25 . The value of m, for which M = 10 kg will move down with an acceleration of 2 m/s², is : ( take g = 10 m/s² and tan 37° = 3/4)",
+                "options": [
+                    "9 kg",
+                    "4.5 kg",
+                    "6.5 kg",
+                    "2.25 kg"
+                ],
+                "correct_answer": "4.5 kg"
+              },
+              {
+                "question": "A coin is placed on a disc. The coefficient of friction between the coin and the disc is µ. If the distance of the coin from the center of the disc is r, the maximum angular velocity which can be given to the disc, so that the coin does not slip away, is :",
+                "options": [
+                    "√(μg/r)",
+                    "√(g/μr)",
+                    "√(μg/r)",
+                    "√(rg/μ)"
+                ],
+                "correct_answer": "√(μg/r)"
+            },
+            {
+                "question": "A light string passing over a smooth light fixed pulley connects two blocks of masses m₁ and m₂. If the acceleration of the system is g/8, then the ratio of masses is",
+                "options": [
+                    "9/7",
+                    "7/9",
+                    "1/9",
+                    "9/1"
+                ],
+                "correct_answer": "9/7"
+            },
+            {
+                "question": "A block of mass 5 kg is placed on a rough inclined surface as shown in the figure. If F₁ is the force required to just move the block up the inclined plane and F₂ is the force required to just prevent the block from sliding down, then the value of F₁ − F₂ is: [Use g = 10 m/s²] [We changed options. In official NTA paper no option was correct.]",
+                "options": [
+                    "25/√3 N",
+                    "5√3 N",
+                    "5√3/2 N",
+                    "10 N"
+
+                ],
+                "correct_answer": "5√3 N"
+            }
+        ]
+    },
+    {
+        "chapter": "magnetic effects of current",
+        "questions": [
+            {
+                "question": "A regular polygon of 6 sides is formed by bending a wire of length 4 meter. If an electric current of 4π√3 A is flowing through the sides of the polygon, the magnetic field at the centre of the polygon would be x × 10⁻⁷ T. The value of x is ______",
+                "options": [
+                  "48",
+                  "54",
+                  "72",
+                  "60"
+                ],
+                "correct_answer": "72"
+              },
+              {
+                "question": "A moving coil galvanometer has 100 turns and each turn has an area of 2.0 cm². The magnetic field produced by the magnet is 0.01 T and the deflection in the coil is 0.05 radian when a current of 10 mA is passed through it. The torsional constant of the suspension wire is x × 10⁻⁵ N – m/rad. The value of x is ______",
+                "options": [
+                  "1",
+                  "2",
+                  "3",
+                  "4"
+                ],
+                "correct_answer": "4"
+              },
+              {
+                "question": "Position of an ant (S in metres) moving in Y – Z plane is given by S = 2t²ĵ + 5k̂ (where t is in second). The magnitude and direction of velocity of the ant at t = 1 s will be :",
+                "options": [
+                  "16 m/s in y-direction",
+                  "4 m/s in x-direction",
+                  "9 m/s in z-direction",
+                  "4 m/s in y-direction"
+                ],
+                "correct_answer": "4 m/s in y-direction"
+              },
+              {
+                "question": "A proton moving with a constant velocity passes through a region of space without any change in its velocity. \nIf E and B represent the electric and magnetic fields respectively, then the region of space may have :\n(A) E = 0, B = 0\n(B) E = 0, B ≠ 0\n(C) E ≠ 0, B = 0\n(D) E ≠ 0, B ≠ 0\nChoose the most appropriate answer from the options given below :",
+                "options": [
+                  "(A), (B) and (C) only",
+                  "(A), (C) and (D) only",
+                  "(A), (B) and (D) only",
+                  "(B), (C) and (D) only"
+                ],
+                "correct_answer": "(A), (B) and (D) only"
+              },
+              {
+                "question": "Two long, straight wires carry equal currents in opposite directions as shown in figure. The separation between the wires is 5.0 cm. The magnitude of the magnetic field at a point P midway between the wires is ______ μΤ (Given : μ₀ = 4π × 10⁻⁷TmA⁻¹)",
+                "options": [
+                  "120",
+                  "140",
+                  "150",
+                  "160"
+                ],
+                "correct_answer": "160"
+              },
+              {
+                "question": "The magnetic field at the centre of a wire loop formed by two semicircular wires of radii R₁ = 2mm and R₂ = 4πm carrying current I = 4 A as per figure given below is α × 10⁻⁷ T. The value of α is____ (Centre O is common for all segments)",
+                "options": [
+                    "1",
+                    "2",
+                    "3",
+                    "4"
+                ],
+                "correct_answer": "3"
+            },
+            {
+                "question": "The magnetic potential due to a magnetic dipole at a point on its axis situated at a distance of 20 cm from its center is 1.5 × 10⁻⁵Tm. The magnetic moment of the dipole is ______ Am². (Given: μ₀/4π = 10⁻⁷TmA⁻¹)",
+                "options": [
+                    "1",
+                    "2",
+                    "4",
+                    "6"
+                ],
+                "correct_answer": "6"
+            },
+            {
+                "question": "Two particles X and Y having equal charges are being accelerated through the same potential difference. Thereafter they enter normally in a region of uniform magnetic field and describes circular paths of radii R₁ and R₂ respectively. The mass ratio of X and Y is :",
+                "options": [
+                    "(R₂/R₁)",
+                    "(R₁/R₂)",
+                    "(R₂/R₁)²",
+                    "(R₁/R₂)²"
+
+                ],
+                "correct_answer": "(R₁/R₂)²"
+            },
+            {
+                "question": "A charge of 4.0µC is moving with a velocity of 4.0 × 10⁶ ms⁻¹ along the positive y-axis under a magnetic field of (2k̂) T. The force acting on the charge is ______ î N.",
+                "options": [
+                    "16",
+                    "24",
+                    "32",
+                    "40"
+
+                ],
+                "correct_answer": "32"
+            },
+            {
+                "question": "The current of 5 A flows in a square loop of sides 1 m is placed in air. The magnetic field at the centre of the loop is X√2 × 10⁻⁷ T. The value of X is ______",
+                "options": [
+                    "10",
+                    "20",
+                    "30",
+                    "40"
+
+                ],
+                "correct_answer": "40"
+            },
+            {
+                "question": "A rigid wire consists of a semicircular portion of radius R and two straight sections. The wire is partially immersed in a perpendicular magnetic field B = B₀ĵ as shown in figure. The magnetic force on the wire if it has a current i is:",
+                "options": [
+                    "−iBR₀ĵ",
+                    "2iBR₀ĵ",
+                    "iBR₀k̂",
+                    "−2iBR₀ĵ"
+                ],
+                "correct_answer": "−2iBR₀ĵ"
+            },
+            {
+                "question": "A coil is placed perpendicular to a magnetic field of 5000 T. When the field is changed to 3000 T in 2 s, an induced emf of 22 V is produced in the coil. If the diameter of the coil is 0.02 m, then the number of turns in the coil is :",
+                "options": [
+                    "7",
+                    "70",
+                    "35",
+                    "140"
+
+                ],
+                "correct_answer": "70"
+            },
+            {
+                "question": "An electron moves through a uniform magnetic field B = B₀î + 2B₀ĵ T. At a particular instant of time, the velocity of electron is v = 3î + 5ĵ m/s. If the magnetic force acting on electron is F = 5ek̂ N, where e is the charge of electron, then the value of B₀ is ______ T.",
+                "options": [
+                    "1",
+                    "2",
+                    "3",
+                    "5"
+                ],
+                "correct_answer": "5"
+            },
+            {
+                "question": "A uniform magnetic field of 2 × 10⁻³ T acts along positive Y-direction. A rectangular loop of sides 20 cm and 10 cm with current of 5 A is Y – Z plane. The current is in anticlockwise sense with reference to negative X axis. Magnitude and direction of the torque is :",
+                "options": [
+                  "2 × 10⁻⁴ N − m along positive Z-direction",
+                  "2 × 10⁻⁴ N − m along negative Z-direction",
+                  "2 × 10⁻⁴ N − m along positive X-direction",
+                  "2 × 10⁻⁴ N − m along positive Y-direction"
+                ],
+                "correct_answer": "2 × 10⁻⁴ N − m along negative Z-direction"
+              },
+              {
+                "question": "Two circular coils P and Q of 100 turns each have same radius of π cm. The currents in P and R are 1 A and 2 A respectively. P and Q are placed with their planes mutually perpendicular with their centers coincide. The resultant magnetic field induction at the center of the coils is √x mT, where x = ______ [Use μ₀ = 4π × 10⁻⁷TmA⁻¹]",
+                "options": [
+                    "5",
+                    "10",
+                    "15",
+                    "20"
+                ],
+                "correct_answer": "20"
+            }
+
+        ]
+    },
+    {
+        "chapter": "magnetic properties of matter",
+        "questions": [
+            {
+                "question": "The horizontal component of earth's magnetic field at a place is 3.5 × 10⁻⁵T. A very long straight conductor carrying current of √2A in the direction from South east to North West is placed. The force per unit length experienced by the conductor is ______ ×10⁻⁶ N/m.",
+                "options": [
+                  "25",
+                  "30",
+                  "35",
+                  "40"
+                ],
+                "correct_answer": "35"
+              }
+        ]
+    },
+    {
+        "chapter": "mathematics in physics",
+        "questions":[
+            {
+                "question": "The radius (r), length (l) and resistance (R) of a metal wire was measured in the laboratory as\nr = (0.35 ± 0.05)cm\nR = (100 ± 10)ohm\nl = (15 ± 0.2)cm\nThe percentage error in resistivity of the material of the wire is",
+                "options": [
+                    "25.6%",
+                    "39.9%",
+                    "37.3%",
+                    "35.6%"
+
+                ],
+                "correct_answer": "39.9%"
+            },
+            {
+                "question": "Match List - I with List II.\nList - I\n(A) 1001\n(B) 010.1\n(C) 100.100\n(D) 0.0010010\nList - II\n(Significant figure)\n(I) 3\n(II) 2\n(III) 5\n(IV) 6\nChoose the correct answer from the options given below:",
+                "options": [
+                    "(A)-(III), (B)-(IV), (C)-(II), (D)-(I)",
+                    "(A)-(IV), (B)-(III), (C)-(I), (D)-(II)",
+                    "(A)-(II), (B)-(I), (C)-(IV), (D)-(III)",
+                    "(A)-(I), (B)-(II), (C)-(III), (D)-(IV)"
+                ],
+                "correct_answer": "(A)-(II), (B)-(I), (C)-(IV), (D)-(III)"
+            },
+            {
+                "question": "The resistance R = V/I where V = (200 ± 5)V and I = (20 ± 0.2)A, the percentage error in the measurement of R is",
+                "options": [
+                    "3.5%",
+                    "7%",
+                    "3%",
+                    "5.5%"
+
+                ],
+                "correct_answer": "3.5%"
+            },
+            {
+                "question": "A physical quantity Q is found to depend on quantities a, b, c by the relation Q = a⁴b³/c². The percentage error in a, b and c are 3%, 4% and 5% respectively. Then, the percentage error in Q is :",
+                "options": [
+                    "66%",
+                    "43%",
+                    "34%",
+                    "14%"
+
+                ],
+                "correct_answer": "34%"
+            },
+            {
+                "question": "A vector has magnitude same as that of A = 3î + 4ĵ and is parallel to B = 4î + 3ĵ. The x and y components of this vector in first quadrant are x and 3 respectively where x = ______",
+                "options": [
+                    "2",
+                    "3",
+                    "4",
+                    "5"
+
+                ],
+                "correct_answer": "4"
+            },
+            {
+                "question": "If the percentage errors in measuring the length and the diameter of a wire are 0.1% each. The percentage error in measuring its resistance will be:",
+                "options": [
+                    "0.2%",
+                    "0.3%",
+                    "0.1%",
+                    "0.144%"
+
+                ],
+                "correct_answer": "0.3%"
+            },
+            {
+                "question": "If two vectors A and B having equal magnitude R are inclined at an angle θ, then",
+                "options": [
+                    "|A – B| = √2R sin(θ/2)",
+                    "|A + B| = 2R sin(θ/2)",
+                    "|A + B| = 2R cos(θ/2)",
+                    "|A − B| = 2R cos(θ/2)"
+                ],
+                "correct_answer": "|A + B| = 2R cos(θ/2)"
+            }
+        ]
+    },
+    {
+        "chapter": "mechanical properties of fluids",
+        "questions": [
+            {
+                "question": "A plane is in level flight at constant speed and each of its two wings has an area of 40 m². If the speed of the air is 180 km/h over the lower wing surface and 252 km/h over the upper wing surface, the mass of the plane is ______ kg. (Take air density to be 1 kg m⁻³ and g = 10 ms⁻²)",
+                "options": [
+                    "9000",
+                    "9200",
+                    "9400",
+                    "9600"
+
+                ],
+                "correct_answer": "9600"
+            },
+            {
+                "question": "A big drop is formed by coalescing 1000 small droplets of water. The surface energy will become :",
+                "options": [
+                    "100 times",
+                    "10 times",
+                    "1/10 times",
+                    "1/100 times"
+
+                ],
+                "correct_answer": "1/10 times"
             }
         ]
     }

@@ -1,47 +1,207 @@
 [
-    {
-      "chapter": "Calculus",
-      "questions": [
-        {
-          "question": "What is the derivative of sin(x)?",
-          "options": ["cos(x)", "-cos(x)", "sin(x)", "-sin(x)"],
-          "correct_answer": "cos(x)"
-        },
-        {
-          "question": "The integral of 1/x dx is:",
-          "options": ["ln|x| + C", "x + C", "1/(x²) + C", "e^x + C"],
-          "correct_answer": "ln|x| + C"
-        }
-      ]
-    },
-    {
-      "chapter": "Algebra",
-      "questions": [
-        {
-          "question": "What is the solution to the equation x² - 4 = 0?",
-          "options": ["x = 2", "x = -2", "x = ±2", "x = 0"],
-          "correct_answer": "x = ±2"
-        },
-        {
-          "question": "The value of (a+b)² is:",
-          "options": ["a² + 2ab + b²", "a² - 2ab + b²", "a² + b²", "a² - b²"],
-          "correct_answer": "a² + 2ab + b²"
-        }
-      ]
-    },
-    {
-      "chapter": "Trigonometry",
-      "questions": [
-        {
-          "question": "What is sin(90°)?",
-          "options": ["0", "1", "√2/2", "-1"],
-          "correct_answer": "1"
-        },
-        {
-          "question": "The identity tan(x) = sin(x)/cos(x) is:",
-          "options": ["Pythagorean identity", "Trigonometric identity", "Algebraic identity", "Exponential identity"],
-          "correct_answer": "Trigonometric identity"
-        }
-      ]
-    }
-  ]
+  {
+    "chapter": "sets",
+    "questions": [
+      {
+        "question": "If A = {1, 2, 3, 4} and B = {3, 4, 5, 6}, then find A∩B.",
+        "options": ["{1, 2}", "{5, 6}", "{3, 4}", "{1, 2, 3, 4, 5, 6}"],
+        "correct_answer": "{3, 4}"
+      },
+      {
+        "question": "If R is a relation on the set A = {1, 2, 3} given by R = {(1, 1), (2, 2), (3, 3)}, then R is",
+        "options": ["reflexive only", "symmetric only", "transitive only", "an equivalence relation"],
+        "correct_answer": "an equivalence relation"
+      },
+      {
+        "question": "Let f: R → R be defined by f(x) = x² + 1.  Is f a one-one function?",
+        "options": ["Yes", "No"],
+        "correct_answer": "No"
+      }
+    ]
+  },
+  {
+    "chapter": "complex numbers",
+    "questions": [
+      {
+        "question": "What is the modulus of the complex number z = 3 + 4i?",
+        "options": ["3", "4", "5", "7"],
+        "correct_answer": "5"
+      },
+      {
+        "question": "What is the conjugate of the complex number z = 2 - i?",
+        "options": ["2 + i", "2 - i", "-2 + i", "-2 - i"],
+        "correct_answer": "2 + i"
+      },
+      {
+        "question": "If z = 1 + i, then z² = ?",
+        "options": ["1 - 1", "2i", "2 + 2i", "0"],
+        "correct_answer": "2i"
+      }
+    ]
+  },
+  {
+    "chapter": "matrices and determinants",
+    "questions": [
+      {
+        "question": "If A is a square matrix of order 3 such that |A| = 4, then find the value of |2A|.",
+        "options": ["8", "16", "32", "64"],
+        "correct_answer": "32"
+      },
+      {
+        "question": "What is the determinant of the identity matrix of order 2?",
+        "options": ["0", "1", "2", "4"],
+        "correct_answer": "1"
+      },
+      {
+        "question": "If A and B are square matrices of the same order, then (AB)ᵀ = ?",
+        "options": ["AᵀBᵀ", "BᵀAᵀ", "AB", "BA"],
+        "correct_answer": "BᵀAᵀ"
+      }
+    ]
+  },
+  {
+    "chapter": "permutations and combinations",
+    "questions": [
+      {
+        "question": "In how many ways can 3 letters be selected from the letters of the word 'LETTER'?",
+        "options": ["30", "60", "90", "120"],
+        "correct_answer": "30"
+      },
+      {
+        "question": "What is the value of ⁵C₃?",
+        "options": ["5", "10", "15", "20"],
+        "correct_answer": "10"
+      },
+      {
+        "question": "In how many ways can 5 persons be arranged around a circular table?",
+        "options": ["5", "24", "120", "720"],
+        "correct_answer": "24"
+      }
+    ]
+  },
+  {
+    "chapter": "Binomial Theorem",
+    "questions": [
+      {
+        "question": "What is the coefficient of x² in the expansion of (1 + x)⁵?",
+        "options": ["1", "5", "10", "15"],
+        "correct_answer": "10"
+      },
+      {
+        "question": "The term independent of x in the expansion of (x + 1/x)⁴ is",
+        "options": ["1", "4", "6", "8"],
+        "correct_answer": "6"
+      },
+      {
+        "question": "What is the sum of the coefficients in the expansion of (1 + x)³?",
+        "options": ["1", "2", "4", "8"],
+        "correct_answer": "8"
+      }
+    ]
+  },
+  {
+    "chapter": "Sequence and Series",
+    "questions": [
+      {
+        "question": "What is the sum of the first 5 natural numbers?",
+        "options": ["10", "15", "20", "25"],
+        "correct_answer": "15"
+      },
+      {
+        "question": "The nth term of an arithmetic progression is given by an = a + (n-1)d, where a is the first term and d is the common difference.  If the first term is 2 and the common difference is 3, what is the 4th term?",
+        "options": ["8", "11", "14", "17"],
+        "correct_answer": "11"
+      },
+      {
+        "question": "The sum of an infinite geometric series with first term 'a' and common ratio 'r' (|r| < 1) is given by?",
+        "options": ["a/(1-r)", "a/(1+r)", "r/(1-a)", "r/(1+a)"],
+        "correct_answer": "a/(1-r)"
+      }
+    ]
+  },
+  {
+    "chapter": "Three Dimensional Geometry",
+    "questions": [
+      {
+        "question": "What is the distance between the points (1, 2, 3) and (4, 5, 6)?",
+        "options": ["√3", "√6", "3√3", "6"],
+        "correct_answer": "3√3"
+      },
+      {
+        "question": "The direction ratios of the line joining the points (2, 3, 4) and (5, 6, 7) are",
+        "options": ["(1, 1, 1)", "(2, 2, 2)", "(3, 3, 3)", "(4, 4, 4)"],
+        "correct_answer": "(3, 3, 3)"
+      },
+      {
+        "question": "If the direction cosines of a line are (1/√3, 1/√3, 1/√3), then the angle made by the line with the positive x-axis is",
+        "options": ["0°", "30°", "45°", "cos⁻¹(1/√3)"],
+        "correct_answer": "cos⁻¹(1/√3)"
+      }
+    ]
+  },
+  {
+    "chapter": "Mathematical Reasoning",
+    "questions": [
+      {
+        "question": "Which of the following is a statement?",
+        "options": ["Open the door.", "What is your name?", "The sun rises in the east.", "How are you?"],
+        "correct_answer": "The sun rises in the east."
+      },
+      {
+        "question": "The negation of the statement 'p: All cats are black' is",
+        "options": [
+          "Some cats are not black.",
+          "No cats are black.",
+          "Some cats are black.",
+          "All cats are not black."
+        ],
+        "correct_answer": "Some cats are not black."
+      },
+      {
+        "question": "If p and q are two statements, then the statement 'p → q' is equivalent to",
+        "options": ["p ∧ q", "p ∨ q", "¬p ∨ q", "¬p ∧ q"],
+        "correct_answer": "¬p ∨ q"
+      }
+    ]
+  },
+  {
+    "chapter": "Statistics",
+    "questions": [
+      {
+        "question": "The mean of the data 1, 2, 3, 4, 5 is?",
+        "options": ["1", "2", "3", "4"],
+        "correct_answer": "3"
+      },
+      {
+        "question": "If the variance of a data set is 4, then the standard deviation is?",
+        "options": ["1", "2", "4", "16"],
+        "correct_answer": "2"
+      },
+      {
+        "question": "If two events A and B are mutually exclusive, then P(A ∩ B) = ?",
+        "options": ["0", "1", "P(A)", "P(B)"],
+        "correct_answer": "0"
+      }
+    ]
+  },
+  {
+    "chapter": "Probability",
+    "questions": [
+      {
+        "question": "A coin is tossed twice. What is the probability of getting two heads?",
+        "options": ["1/2", "1/4", "1/8", "1"],
+        "correct_answer": "1/4"
+      },
+      {
+        "question": "Two dice are rolled.  What is the probability that the sum of the numbers on the two dice is 7?",
+        "options": ["1/6", "1/12", "1/18", "1/36"],
+        "correct_answer": "1/6"
+      },
+      {
+        "question": "If P(A) = 0.3 and P(B) = 0.4, and A and B are independent events, then P(A∪B) = ?",
+        "options": ["0.58", "0.7", "0.12", "0.5"],
+        "correct_answer": "0.58"
+      }
+    ]
+  }
+]

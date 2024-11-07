@@ -23,24 +23,10 @@ const __dirname = dirname(__filename)
 dotenv.config({ path: path.resolve(__dirname, '../.env') });
 const app = express();
 // Allowed origins
-const allowedOrigins = ['*'];
+const allowedOrigins = ['http://localhost:5173', 'http://localhost:5174'];
 
 app.use(cors({
-  origin: function(origin, callback){
-    // Allow requests with no origin (like mobile apps or curl requests)
-    if(!origin) return callback(null, true);
-    if(allowedOrigins.indexOf('*') === -1){
-      const msg = 'The CORS policy for this site does not allow access from the specified Origin.';
-      return callback(new Error(msg), false);
-    }
-    return callback(null, true);
-  },
-  credentials: true,
-}));
-// Middleware
-
-app.use(cors({
-  origin: 'http://localhost:5174', // Vite's default port
+  origin: allowedOrigins,
   credentials: true,
 }));
 
@@ -170,7 +156,7 @@ app.get('/verify', (req, res) => {
  */
 app.get('/profile', authMiddleware, async (req, res) => {
   try {
-    const user = await User.findById(req.user.id).select('-password');
+    const user = await User.findById(req.user.id);
     res.json({ user });
   } catch (err) {
     console.error('Profile Fetch Error:', err.message);

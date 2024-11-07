@@ -1,47 +1,62 @@
 [
-    {
-      "chapter": "Organic Chemistry",
-      "questions": [
-        {
-          "question": "What is the functional group of alcohols?",
-          "options": ["-OH", "-COOH", "-NH2", "-CH3"],
-          "correct_answer": "-OH"
-        },
-        {
-          "question": "Benzene is an example of a:",
-          "options": ["Alkane", "Alkene", "Alkyne", "Aromatic Hydrocarbon"],
-          "correct_answer": "Aromatic Hydrocarbon"
-        }
-      ]
-    },
-    {
-      "chapter": "Physical Chemistry",
-      "questions": [
-        {
-          "question": "What is the pH of a neutral solution at 25°C?",
-          "options": ["7", "0", "14", "1"],
-          "correct_answer": "7"
-        },
-        {
-          "question": "The rate of a chemical reaction is increased by:",
-          "options": ["Decreasing temperature", "Increasing concentration", "Decreasing surface area", "Adding a catalyst"],
-          "correct_answer": "Increasing concentration"
-        }
-      ]
-    },
-    {
-      "chapter": "Inorganic Chemistry",
-      "questions": [
-        {
-          "question": "Which of the following elements is a noble gas?",
-          "options": ["Nitrogen", "Oxygen", "Neon", "Hydrogen"],
-          "correct_answer": "Neon"
-        },
-        {
-          "question": "The oxidation state of sulfur in SO₂ is:",
-          "options": ["+4", "+6", "-2", "0"],
-          "correct_answer": "+4"
-        }
-      ]
-    }
-  ]
+  {
+    "chapter": "chemical bonding",
+    "questions": [
+      {
+        "question": "Which of the following molecules is expected to be diamagnetic?",
+        "options": ["O2", "B2", "N2", "C2"],
+        "correct_answer": "N2"
+      },
+      {
+        "question": "What is the bond order of O2?",
+        "options": ["1", "2", "3", "0"],
+        "correct_answer": "2"
+      },
+      {
+        "question": "Which of the following has sp³ hybridization?",
+        "options": ["BeCl2", "BF3", "CH4", "CO2"],
+        "correct_answer": "CH4"
+      },
+      {
+        "question": "Which of the following molecules has a triple bond?",
+        "options": ["N2", "O2", "F2", "Cl2"],
+        "correct_answer": "N2"
+      },
+      {
+        "question": "What is the total number of sigma bonds in SO2?",
+        "options": ["0", "1", "2", "3"],
+        "correct_answer": "2"
+      }
+    ]
+  },
+  {
+    "chapter": "coordination chemistry",
+    "questions": [
+      {
+        "question": "What is the coordination number of the central metal ion in [Co(NH3)6]³⁺?",
+        "options": ["2", "4", "6", "8"],
+        "correct_answer": "6"
+      },
+      {
+        "question": "Which of the following ligands is a bidentate ligand?",
+        "options": ["Cl⁻", "H2O", "NH3", "en"],
+        "correct_answer": "en"
+      },
+      {
+        "question": "What is the oxidation state of Fe in [Fe(CN)6]⁴⁻?",
+        "options": ["+1", "+2", "+3", "+4"],
+        "correct_answer": "+2"
+      },
+      {
+        "question": "Which of the following complexes is expected to be diamagnetic?",
+        "options": ["[Fe(H2O)6]²⁺", "[Co(NH3)6]³⁺", "[Mn(H2O)6]²⁺", "[Ni(CN)4]²⁻"],
+        "correct_answer": "[Co(NH3)6]³⁺"
+      },
+      {
+        "question": "What type of isomerism is shown by [Co(NH3)5Br]Cl₂?",
+        "options": ["Coordination isomerism", "Linkage isomerism", "Ionization isomerism", "Geometric isomerism"],
+        "correct_answer": "Ionization isomerism"
+      }
+    ]
+  }
+]

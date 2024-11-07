@@ -1,0 +1,61 @@
+/* AllQuestions.css */
+
+.all-questions-container {
+  background-color: #31486b; /* Light gray background */
+  min-height: 100vh; /* Ensure full viewport height */
+  padding-top: 2rem;  /* Add top padding */
+}
+.submit-button {
+    background-color: #4CAF50; /* Green background */
+    border: none;
+    color: white;
+    padding: 1rem 2rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    margin-top: 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-button:hover {
+    background-color: #45a049;
+  }
+.questions-title {
+  font-weight: bold; 
+  margin-bottom: 2rem;
+}
+
+.question-paper {
+  padding: 2rem;  /* Padding inside the paper */
+  border-radius: 8px; /* Rounded corners */
+box-shadow: 0 4px 20px rgba(0,0,0,0.1) !important;
+border-radius: 16px !important;
+overflow: hidden;
+}
+
+.MuiFormControlLabel-root {
+    margin-bottom: 1rem; /* Spacing between options */
+}
+
+.MuiFormControlLabel-root.Mui-checked {
+    color: #2196f3; /* Blue highlight for checked option (or use your theme's primary color) */
+    font-weight: 600; /* Slightly bolder for checked option */
+}
+
+.MuiButton-root {
+  text-transform: none; /* Prevent uppercase button text */
+}
+
+/* Responsive Design Adjustments (Optional) */
+@media (max-width: 600px) {
+  .MuiContainer-root {
+    padding: 1rem;
+  }
+
+  .question-paper {
+    padding: 1.5rem;
+  }
+}

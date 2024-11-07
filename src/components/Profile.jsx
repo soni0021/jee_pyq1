@@ -59,7 +59,7 @@ const Profile = () => {
   const handleSave = async () => {
     try {
       const token = localStorage.getItem('token');
-      const res = await axios.put('/api/profile', formData, {
+      const res = await axios.put('/api/index/profile', formData, {
         headers: {
           Authorization: `Bearer ${token}`,
         },

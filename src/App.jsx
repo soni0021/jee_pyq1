@@ -12,6 +12,7 @@ import ProtectedRoute from './components/ProtectedRoute';
 import './App.css';
 import SubjectDashboard from './components/SubjectDashboard';
 import Hii from "./components/Hii";
+import AllQuestions from './components/AllQuestions';
 const App = () => {
   return (
     <div className="app-container">
@@ -38,8 +39,23 @@ const App = () => {
             />
             <Route path="/login" element={<Login />} />
             <Route path="/signup" element={<Signup />} />
-            <Route path="/subject/:subjectName" element={<SubjectDashboard />} />
-            {/* Add other routes here */}
+            <Route
+                path="/subject/:subjectName"
+                     element={
+                          <ProtectedRoute>
+                           <SubjectDashboard />
+                              </ProtectedRoute>
+                             }
+/>                 
+                         <Route
+                   path="/subject/:subjectName/chapter/:chapterName"
+                    element={
+                     <ProtectedRoute>
+                       <AllQuestions />
+                      </ProtectedRoute>
+                         }
+/>
+           
           </Routes>
         </div>
         <Footer />

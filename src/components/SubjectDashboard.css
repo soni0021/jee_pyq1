@@ -1,25 +1,144 @@
 /* src/components/SubjectDashboard.css */
 .dashboard-container {
-    padding: 4rem 2rem;
-    background-color: #0F172A;
-    min-height: 100vh;
+  padding: 4rem 2rem;
+  background-color: #0F172A;
+  min-height: 100vh;
+}
+
+.dashboard-title {
+  color: #FFFFFF;
+  font-weight: 600;
+  margin-bottom: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: relative;
+}
+
+.dashboard-title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(90deg, #4F46E5, #818CF8);
+  border-radius: 2px;
+}
+
+.chapter-card-wrapper {
+  height: 100%;
+  perspective: 1000px;
+}
+
+.chapter-card {
+  height: 100%;
+  background-color: #1E293B;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.chapter-image {
+  height: 160px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.chapter-card:hover .chapter-image {
+  transform: scale(1.1);
+}
+
+.chapter-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.chapter-title {
+  color: #FFFFFF;
+  font-weight: 600;
+  flex: 1;
+  margin-right: 1rem;
+}
+
+.bookmark-button {
+  color: #818CF8;
+  padding: 4px;
+}
+
+.progress-section {
+  margin: 1rem 0;
+}
+
+.progress-bar {
+  margin-top: 8px;
+  height: 6px;
+  border-radius: 3px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.progress-bar .MuiLinearProgress-bar {
+  background: linear-gradient(90deg, #4F46E5, #818CF8);
+}
+
+.chapter-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+
+.view-button {
+  background: linear-gradient(45deg, #4F46E5, #818CF8) !important;
+  color: white !important;
+  padding: 8px 16px !important;
+  border-radius: 8px !important;
+  text-transform: none !important;
+  font-weight: 500 !important;
+  box-shadow: 0 4px 12px rgba(79, 70, 229, 0.3) !important;
+  transition: transform 0.2s ease, box-shadow 0.2s ease !important;
+}
+
+.view-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(79, 70, 229, 0.4) !important;
+}
+
+.questions-chip {
+  background-color: rgba(129, 140, 248, 0.1) !important;
+  color: #818CF8 !important;
+  font-weight: 500 !important;
+}
+
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+}
+
+@media (max-width: 600px) {
+  .dashboard-container {
+    padding: 2rem 1rem;
   }
-  
+
   .chapter-card {
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1) !important;
-    border-radius: 16px !important;
-    overflow: hidden;
-    background-color: #1E293B;
-    transition: transform 0.3s ease-in-out;
+    margin-bottom: 1rem;
   }
-  
-  .chapter-card:hover {
-    transform: translateY(-10px);
+
+  .chapter-actions {
+    flex-direction: column;
+    gap: 1rem;
   }
-  
-  .loading-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+
+  .view-button {
+    width: 100%;
   }
+
+  .questions-chip {
+    align-self: center;
+  }
+}
