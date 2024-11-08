@@ -80,7 +80,7 @@
     ]
   },
   {
-    "chapter": "Binomial Theorem",
+    "chapter": "binomial theorem",
     "questions": [
       {
         "question": "What is the coefficient of x² in the expansion of (1 + x)⁵?",
@@ -100,7 +100,7 @@
     ]
   },
   {
-    "chapter": "Sequence and Series",
+    "chapter": "sequence and series",
     "questions": [
       {
         "question": "What is the sum of the first 5 natural numbers?",
@@ -120,7 +120,7 @@
     ]
   },
   {
-    "chapter": "Three Dimensional Geometry",
+    "chapter": "three dimensional geometry",
     "questions": [
       {
         "question": "What is the distance between the points (1, 2, 3) and (4, 5, 6)?",
@@ -140,7 +140,7 @@
     ]
   },
   {
-    "chapter": "Mathematical Reasoning",
+    "chapter": "mathematical reasoning",
     "questions": [
       {
         "question": "Which of the following is a statement?",
@@ -165,7 +165,7 @@
     ]
   },
   {
-    "chapter": "Statistics",
+    "chapter": "statistics",
     "questions": [
       {
         "question": "The mean of the data 1, 2, 3, 4, 5 is?",
@@ -185,7 +185,7 @@
     ]
   },
   {
-    "chapter": "Probability",
+    "chapter": "probability",
     "questions": [
       {
         "question": "A coin is tossed twice. What is the probability of getting two heads?",

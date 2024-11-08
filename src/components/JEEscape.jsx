@@ -28,7 +28,7 @@ const subjects = [
     color: '#4ECDC4'
   },
   {
-    title: 'Mathematics',
+    title: 'Maths',
     icon: <Functions sx={{ fontSize: 40 }}/>,
     description: 'Enhance your problem-solving skills in mathematics',
     color: '#45B7D1'

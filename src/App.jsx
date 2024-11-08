@@ -13,6 +13,7 @@ import './App.css';
 import SubjectDashboard from './components/SubjectDashboard';
 import Hii from "./components/Hii";
 import AllQuestions from './components/AllQuestions';
+import StartLearning from './components/StartLearning.jsx';
 const App = () => {
   return (
     <div className="app-container">
@@ -55,7 +56,10 @@ const App = () => {
                       </ProtectedRoute>
                          }
 />
-           
+            <Route
+          path="/subject/:subjectName/chapter/:chapterName/start-learning"
+          element={<StartLearning />}
+          />
           </Routes>
         </div>
         <Footer />

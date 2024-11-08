@@ -26,7 +26,9 @@ const AllQuestions = () => {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-
+  const [selectedOptions, setSelectedOptions] = useState({});
+  const [score, setScore] = useState(0);
+  const [showResults, setShowResults] = useState(false);
   useEffect(() => {
     const fetchAllQuestions = async () => {
       try {
@@ -57,18 +59,31 @@ const AllQuestions = () => {
     }
   };
 
-  const handleSolveQuestion = () => {
-    // Mark the current question as done
+  const handleOptionChange = (e) => {
+    const updatedSelections = {
+      ...selectedOptions,
+      [currentQuestionIndex]: e.target.value,
+    };
+    setSelectedOptions(updatedSelections);
+  };
+  
+  const handleSubmitAnswer = () => {
+    const selected = selectedOptions[currentQuestionIndex];
+    const correct = currentQuestion.correct_answer;
+    if (selected === correct) {
+      setScore(score + 1);
+    }
+    // Mark question as done and show correct answer
     const updatedQuestions = [...questions];
     updatedQuestions[currentQuestionIndex].isDone = true;
+    updatedQuestions[currentQuestionIndex].isCorrect = selected === correct;
     setQuestions(updatedQuestions);
-    
-    // Navigate to the next question or a confirmation page
+  
+    // Navigate to next question or show results
     if (currentQuestionIndex < questions.length - 1) {
       setCurrentQuestionIndex(currentQuestionIndex + 1);
     } else {
-      // If all questions are done, navigate to a completion page or show a message
-     
+      setShowResults(true);
     }
   };
 
@@ -111,61 +126,66 @@ const AllQuestions = () => {
       transition={{ duration: 0.8 }}
     >
       <Container maxWidth="md">
-        <Typography variant="h4" gutterBottom align="center" className="questions-title">
-          {chapterName.charAt(0).toUpperCase() + chapterName.slice(1)} - Question {currentQuestionIndex + 1}
-        </Typography>
-        
-        <Paper elevation={3} className="question-paper p-6">
-          <Typography variant="h6" gutterBottom>
-            {currentQuestion?.question}
+      {showResults ? (
+        <div>
+          <Typography variant="h4" gutterBottom>
+            Quiz Completed!
           </Typography>
-
-          <FormControl component="fieldset" className="mt-4">
-            <RadioGroup>
-              {currentQuestion?.options.map((option, idx) => (
+          <Typography variant="h6">
+            Your Score: {score} / {questions.length}
+          </Typography>
+          <Typography variant="h6">
+            Accuracy: {((score / questions.length) * 100).toFixed(2)}%
+          </Typography>
+        </div>
+      ) : (
+        <Paper elevation="3" className="question-paper">
+          <Typography variant="h5">
+            {currentQuestion.question}
+          </Typography>
+          <FormControl component="fieldset">
+            <RadioGroup
+              value={selectedOptions[currentQuestionIndex] || ''}
+              onChange={handleOptionChange}
+            >
+              {currentQuestion.options.map((option, idx) => (
                 <FormControlLabel
                   key={idx}
                   value={option}
                   control={<Radio />}
-                  label={`${String.fromCharCode(65 + idx)}. ${option}`}
+                  label={option}
                 />
               ))}
             </RadioGroup>
           </FormControl>
-
-          <Box className="mt-6 flex justify-between items-center">
+          {questions[currentQuestionIndex].isDone && (
+            <Typography variant="body1" color="secondary">
+              Correct Answer: {currentQuestion.correct_answer}
+            </Typography>
+          )}
+          <Box mt={2}>
             <Button
               variant="contained"
               color="primary"
-              onClick={handlePrevious}
-              disabled={currentQuestionIndex === 0}
-            >
-              Previous
-            </Button>
-            <Button
-              variant="contained"
-              color="primary"
-              onClick={handleSolveQuestion}
+              onClick={handleSubmitAnswer}
+              disabled={questions[currentQuestionIndex].isDone}
             >
               Submit
             </Button>
+               
             <Button
-              variant="contained"
-              color="primary"
+              variant="outlined"
+              color="secondary"
               onClick={handleNext}
               disabled={currentQuestionIndex === questions.length - 1}
             >
               Next
             </Button>
           </Box>
-          
-          <Typography variant="body2" align="center" className="mt-4">
-            Question {currentQuestionIndex + 1} of {questions.length}
-          </Typography>
         </Paper>
-      </Container>
-    </motion.div>
-  );
-};
-
+      )}
+    </Container>
+  </motion.div>
+);
+}
 export default AllQuestions;
