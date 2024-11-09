@@ -24,7 +24,7 @@ JEE Escape is a comprehensive web platform designed to help students prepare for
 
 ## Demo
 
-[Live Demo]((https://youtu.be/eZbX1oW6Otw))
+[Live Demo]({https://youtu.be/eZbX1oW6Otw})
 
 ## Getting Started
 
