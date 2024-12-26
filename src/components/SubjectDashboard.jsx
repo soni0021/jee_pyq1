@@ -38,7 +38,7 @@ const SubjectDashboard = () => {
 
       try {
         const token = localStorage.getItem('token'); // If authentication is required
-        const response = await axios.get(`http://localhost:5011/${subjectName}/chapters`, {
+        const response = await axios.get(`https://jee-pyq1.onrender.com/${subjectName}/chapters`, {
           headers: { Authorization: `Bearer ${token}` },
         });
         setChapters(response.data);
