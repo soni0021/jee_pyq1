@@ -34,7 +34,7 @@ const AllQuestions = () => {
       try {
         const token = localStorage.getItem('token');
         const response = await axios.get(
-          `http://localhost:5011/${subjectName}/chapters/${chapterName}`,
+          `https://jee-pyq1.onrender.com/${subjectName}/chapters/${chapterName}`,
           { headers: { Authorization: `Bearer ${token}` } }
         );
         setQuestions(response.data);
