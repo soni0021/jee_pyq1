@@ -28,7 +28,7 @@ const StartLearning = () => {
     // Fetch questions based on subjectName and chapterName
     const fetchQuestions = async () => {
       try {
-        const response = await fetch(`http://localhost:5011/${subjectName}/chapters/${chapterName}`);
+        const response = await fetch(`https://jee-pyq1.onrender.com/${subjectName}/chapters/${chapterName}`);
         if (!response.ok) {
           throw new Error('Network response was not ok');
         }
