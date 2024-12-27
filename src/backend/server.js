@@ -23,12 +23,13 @@ const __dirname = dirname(__filename)
 dotenv.config({ path: path.resolve(__dirname, '../.env') });
 const app = express();
 // Allowed origins
-const allowedOrigins = ['https://jeescape-fr.onrender.com/', 'http://localhost:5174'];
+
+const cors = require('cors');
 
 app.use(cors({
-  origin: allowedOrigins,
-  credentials: true,
+  origin: '*'
 }));
+
 
 // Connect to MongoDB
 connectDB();
