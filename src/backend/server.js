@@ -24,7 +24,6 @@ dotenv.config({ path: path.resolve(__dirname, '../.env') });
 const app = express();
 // Allowed origins
 
-const cors = require('cors');
 
 app.use(cors({
   origin: '*'
