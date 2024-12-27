@@ -26,10 +26,9 @@ const app = express();
 
 
 app.use(cors({
-  origin: '*'
+    origin: ['http://localhost:5173', 'http://localhost:5174', 'https://jeescape-fr.onrender.com'],
+    credentials: true,
 }));
-
-
 // Connect to MongoDB
 connectDB();
 app.use(express.json());
